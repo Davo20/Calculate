@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculiator{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #010101;
+    .monitor{
+        background-color: #010101;
+        color: #89ceed;
+        display: block;
+        border: none;
+        outline: none;
+        position: relative;
+        width: 90%;
+        height: 120px;
+        border-bottom: 1px solid #868383;
+        margin: 5px auto;
+        text-align: right;
+        font-size: 20px;
+        // font-weight: bold;
+        // font-family: sans-serif;
+    }
+    .keyboard{
+        position: relative;
+        width: 90%;
+        height: 360px;
+        margin: 0 auto;
+        text-align: center;
+        svg{
+            position: absolute;
+            top: -30px;
+            right: 10px;
+            font-size: 20px;
+            color: red;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            margin: 5px 5px;
+            color:#89ceed;
+            // font-weight: bold;
+            background-color: #151c1f;
+            cursor: pointer;
+            &:nth-child(1){
+                width: 110px;
+                border-radius: 25px;
+            }
+            &:hover{
+                background-color: #101517;
+            }
+        }
+        .result{
+            background-color: #295ea0;
+            color: #fafafa;
+            &:hover{
+                background-color: #194880;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    .calculiator{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        .monitor{height: 200px;}
+        .keyboard{   
+            padding: 10px 0;
+            button{
+                width: 75px;
+                height: 75px;
+                &:nth-child(1){
+                    width: 160px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
