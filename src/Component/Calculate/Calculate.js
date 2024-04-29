@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {IoMdCloseCircleOutline} from "react-icons/io";
-// import { Textfit } from 'react-textfit';
 
 import "./calc.scss";
 
